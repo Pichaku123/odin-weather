@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebpack_prac=self.webpackChunkwebpack_prac||[]).push([[654],{654:(p,e,a)=>{p.exports=a.p+"images/wind.png"}}]);

@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwebpack_prac=self.webpackChunkwebpack_prac||[]).push([[990],{990:(p,e,c)=>{p.exports=c.p+"images/cold.png"}}]);
