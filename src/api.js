@@ -15,7 +15,12 @@ async function api(searchQuery) {
         const data = await response.json();
         console.log(data);
         console.log(`Current Temperature- ${data.currentConditions.temp} deg F`);
-        return data;
+        return {
+            location: data.resolvedAddress,
+            conditions: data.currentConditions.conditions,
+            temp: data.currentConditions.temp,
+            feelslike: data.currentConditions.feelslike,
+        };
     } catch (error) {
         console.log(`API Error- ${error}`);
         return null;

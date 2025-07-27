@@ -1,4 +1,5 @@
 import "./styles.css";
+import "./images/bg.png";
 import { renderContent } from "./display";
 
 renderContent();

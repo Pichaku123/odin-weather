@@ -1,10 +1,96 @@
-body {
-    background-color: azure;
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr 6fr 1fr;
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Edu+VIC+WA+NT+Hand:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', 'sans-serif';
 }
 
-body > *{
-    border: 2px solid black;
+body {
+    background-color: lightgreen;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 2fr 7fr 1fr;
+    background-image: url('./images/bg.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 10%;
+    gap: 5%;
+    
+    height: 100%;
+}
+
+#location{
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+input{
+    height: 2rem;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.4rem;
+}
+
+#submit{
+    font-size: 1.1rem;
+    padding: 0.3rem 1.2rem;
+    border-radius: 0.4rem;
+}
+
+#display{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.area{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.conditions{
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.temp{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.feels-temp{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: antiquewhite;
+}
+
+.icon{
+    width: 6rem;
+    height: 6rem;
 }
